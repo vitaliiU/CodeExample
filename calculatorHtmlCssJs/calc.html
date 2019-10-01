@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">       
+        <title>calc</title>
+        <link rel="stylesheet" type="text/css" href="calc.css" />  
+        <script defer src="calc.js"></script>   
+    </head>
+    <body>  
+        <div class="calc-upper">
+            <div class="calc-inner">
+                <div class="screen">                    
+                    <div id="screen__value"></screen__value></div>
+                </div>
+                <div class="keyboard">
+                    <div class="row-one">  
+                        <input type="button" class="clear" value="C"  onclick="return clearStr()">                      
+                        <input type="button" class="arrow" value="<=" onclick="return sliceStr()">
+                        <input type="button" class="+/-"   value="+/-" onclick="return changeSign()">
+                        <input type="button" class="sqr"   value="sqr" onclick="return addToFormulaString(value)">
+                        <input type="button" class="%"     value="%" onclick="return addToFormulaString(value)">
+                        <input type="button" class="pow"   value="pow" onclick="return addToFormulaString(value)">                                           
+                    </div> 
+                    <div class="row-two">
+                        <input type="button" class="(" value="(" onclick="return addToFormulaString(value)">
+                        <input type="button" class=")" value=")" onclick="return addToFormulaString(value)">
+                        <input type="button" class="/" value="/" onclick="return addToFormulaString(value)">
+                        <input type="button" class="*" value="*" onclick="return addToFormulaString(value)">
+                        <input type="button" class="-" value="-" onclick="return addToFormulaString(value)">
+                        <input type="button" class="+" value="+" onclick="return addToFormulaString(value)">
+                    </div>
+                    <div class="row-three">
+                         <input type="button" class="5" value="5" onclick="return addToFormulaString(value)">
+                        <input type="button" class="6" value="6" onclick="return addToFormulaString(value)">
+                        <input type="button" class="7" value="7" onclick="return addToFormulaString(value)">
+                        <input type="button" class="8" value="8" onclick="return addToFormulaString(value)">
+                        <input type="button" class="9" value="9" onclick="return addToFormulaString(value)">
+                        <input type="button" class="," value="." onclick="return addToFormulaString(value)">
+                    </div> 
+                    <div class="row-four">
+                         <input type="button" class="0" value="0" onclick="return addToFormulaString(value)">
+                        <input type="button" class="1" value="1" onclick="return addToFormulaString(value)">
+                        <input type="button" class="2" value="2" onclick="return addToFormulaString(value)">
+                        <input type="button" class="3" value="3" onclick="return addToFormulaString(value)">
+                        <input type="button" class="4" value="4" onclick="return addToFormulaString(value)">
+                        <input type="button" class="=" value="=" onclick="return equally ()">
+                    </div>
+                </div>
+            </div>    
+        </div>         
+    </body>
+</html>
